@@ -1,0 +1,37 @@
+Nom: HAMMAL 
+Prenom: Abdelmalek
+Groupe: A
+N etudiant: 21965514
+
+Remarque: nom du fichier de l'execution index.js donc l'execution ce fait par la commande node index.js ou bien par npm run devsrart pour une execution dynamique
+
+﻿1)Travaille fait :
+    -insription avec identifiant et authentification par mot de pasee (mail unique,mot de passe crypté, mot de passe doit etre plus que 6 character) 
+    -creation de memo
+    -affichage de tout les memos puis un affichage d'un memo seule avec plus de details
+    -partage possible uniquement possible aux utilisateur choisis seule le createur du memo peut donner les autorisation , 
+     et chaque utilisateur autorisé peut modifier les memos 
+    -utilisation du bootstrap pour le style
+
+2)Travaille en plus:
+    -suppression d'un memo (seule le createur d'un memo peut le supprimer)
+    -la recherche d'un memo par contenue (si le mot clé apartient au memo) 
+    -envoi des message message informatif a chaque effectuation d'operation ou lors des erreurs pour montrer ce qui va pas	
+
+3)configuration de la base de données:
+    je suis pas trés sur de la configuration car dans mon pc je Travaille avec la configuration de mon serveur , ce que j'ai fai est:
+    la configuration et la creation de la base de données et la table ce fait automatiquement qu'on lance lapplication il faut rien ajouté 
+    dans le debut de mon code il ce connect au serveur et verifier si la base de données existe si non il créer la base de données , et aprés
+    il ce connect a la base de données et de meme pour les tables il verifier si elles n'existent pas il créer les tables.
+    et pour la connection au serveur j'ai fait:
+
+db =mysql.createConnection({
+	host:'localhost',
+	user:'enu21965514',
+	password:'enu21965514',
+	database:''
+
+})    
+ 
+et aprés la creation de la base de données je refait la connection en ajoutant le nom de la base de données, si la connection marche pas
+avec cette configuration dans lampe alors , cette configuration doit etre changé qui est au debut du code. 
